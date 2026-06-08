@@ -27,7 +27,7 @@ include __DIR__ . '/includes/navbar.php';
     <div class="col-12 text-center">
       <?php if ($conn): ?>
         <div class="alert alert-success d-inline-block shadow-sm py-2 px-4" role="alert">
-          System Online: Connected to database <strong><?= htmlspecialchars($dbname) ?></strong>
+          System Online: Connected to database!
         </div>
       <?php else: ?>
         <div class="alert alert-danger" role="alert">
