@@ -6,8 +6,9 @@ A web-based Worship Management System designed to organize and manage church ser
 
 ## Live Demo
 
+```bash
 https://worshipmanagementsys.freehosting.dev
-
+```
 ---
 
 ## Project Overview
@@ -65,18 +66,22 @@ ER diagram:
 
 ## Setup Instructions
 
-## Setup Instructions
-
 ### 1. Clone the repository
+```bash
 git clone https://github.com/your-username/worship-management-system.git
 cd worship-management-system
+```
 
 ### 2. Move project to server directory (XAMPP / Apache)
 Copy the project folder into your web server directory:
-/htdocs/
+```text
+/var/www/html/
+```
 
 Example (Windows XAMPP):
+```text
 C:\xampp\htdocs\worship-management-system
+```
 
 ### 3. Start server
 Start:
@@ -86,21 +91,28 @@ Start:
 
 ### 4. Create database
 Open phpMyAdmin:
+```text
 http://localhost/phpmyadmin
+```
 
 Create database:
+```text
 worship_management
+```
 
 ### 5. Import database
 - Open the database
 - Go to Import
 - Select:
+```text
 sql/database.sql
+```
 - Click Import
 
 ### 6. Configure database connection
 Create config.php in project root:
 
+```php
 <?php
 return [
     'host' => 'localhost',
@@ -108,7 +120,10 @@ return [
     'pass' => 'root',
     'db'   => 'worship_management'
 ];
+```
 
 ### 7. Run project
 Open browser:
+```bash
 http://localhost/worship-management-system/
+```
