@@ -1,0 +1,20 @@
+# Sensitive config (DO NOT PUSH)
+config.php
+
+# Todo / personal notes
+Goal:Worhip_Management_System.md
+
+# Database connection backups (optional safety)
+db/config.php
+
+# PHP / system files
+*.log
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/
+
+# Cache / sessions
+cache/
+sessions/
