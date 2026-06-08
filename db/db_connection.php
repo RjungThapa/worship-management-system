@@ -1,14 +1,13 @@
 <?php
-// Database configuration
-$servername = "localhost";
-$username = "root";
-$password = "root"; 
-$dbname = "worship_management"; 
+$config = include(__DIR__ . '/config.php');
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli(
+    $config['host'],
+    $config['user'],
+    $config['pass'],
+    $config['db']
+);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
